@@ -56,3 +56,7 @@ This repository contains the setup instructions and code for creating a video st
 <img width="939" alt="test" src="https://github.com/Kiran090303/ReferralBot/assets/98480971/ba330fcb-07d3-4089-9475-b49099fc4d4e">
 
 + Good work 80% of the hard work is already done, Now let's implement the frontend framework. The frontend of choice is the react framework to achieve the result.
+
+# Frontend Implementation
+Clone This Repository.
+
