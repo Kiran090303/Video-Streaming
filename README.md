@@ -52,8 +52,6 @@
 
 + Paste both the distribution domain and video object name into your browser bar to test the video.
 
-<img width="118" alt="Screenshot 2024-01-08 175614" src="https://github.com/Kiran090303/Video-Streaming/assets/98480971/74bfa565-bdfc-4778-b1ef-e88657b66a3e">
-
 # Frontend Setup using React
 + Clone this repository.
 + Install dependencies:-npm install
