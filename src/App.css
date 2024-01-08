@@ -1,0 +1,46 @@
+/* App.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url('bg_wallpaper.jpg') fixed;
+  background-size: cover;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+  background: url('bg_wallpaper.jpg') fixed;
+  background-size: cover;
+}
+
+h2 {
+  color: white; /* Set text color to white */
+}
+
+video {
+  width: 700px;
+  height: 400px;
+  margin-bottom: 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+}
+
+.playButton {
+  background-color: #4caf50; /* Green */
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.playButton:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+

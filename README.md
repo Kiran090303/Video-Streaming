@@ -1,62 +1,70 @@
-# Video-Streaming
-Using React with AWS S3 and CloudFront. Securely store media in S3, optimize global access with CloudFront, and ensure seamless communication with React . To achieve efficient distribution and scalability for a high-quality streaming experience.
+# Getting Started with Create React App
 
-# Introduction
-This repository contains the setup instructions and code for creating a video streaming application using Amazon S3 for storage, Amazon CloudFront for content delivery, and React as the frontend framework.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# Setting up S3 Bucket
-+ Navigate to the AWS Management Console and search for "S3."
-+ Click on the S3 service.
-+ Create a new S3 bucket.
-+ Bucket Name: kiran-videostreaming-storage (provide a unique name).
-+ Region: US West (N. California) or your preferred region.
-+ Enable Bucket Versioning.
-+ Click on "Create Bucket."
+## Available Scripts
 
-<img width="944" alt="S3" src="https://github.com/Kiran090303/ReferralBot/assets/98480971/ea3cfcfa-50f5-4f71-9984-8367e660d07a">
+In the project directory, you can run:
 
-# Setting up CloudFront
-+ Navigate to the AWS Management Console and search for "CloudFront."
-+ Click on CloudFront and go to the "Origin Access Identity" section to create a new Origin Access Identity named "VideoStreaming-OAC."
+### `npm start`
 
-<img width="706" alt="Origin Access" src="https://github.com/Kiran090303/ReferralBot/assets/98480971/e29696c7-8ba0-4162-a27d-2a61186e02e3">
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-+ Create a CloudFront distribution.
-+ Select your S3 domain name as the origin.
-+ Viewer Protocol Policy: Redirect HTTP to HTTPS.
-+ Origin Access Control Settings: Enable Web Application Firewall (WAF).
-+ Click on "Create Distribution."
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-<img width="938" alt="distribution" src="https://github.com/Kiran090303/ReferralBot/assets/98480971/607887ba-24a0-471a-87cb-4c4456177abf">
+### `npm test`
 
-# Update S3 Bucket Policy
-+ Copy the bucket policy generated during CloudFront setup.
-+ Navigate to your S3 bucket and click on "Permissions."
-+ Go to the S3 policy editor and paste the copied policy.
-+ Save changes.
-  
-<img width="908" alt="policy" src="https://github.com/Kiran090303/ReferralBot/assets/98480971/deb1c1f5-a547-43df-be44-5ba05b0ccee8">
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-# Upload Video File
-+ Upload the desired video file to the S3 bucket.
+### `npm run build`
 
-<img width="750" alt="upload" src="https://github.com/Kiran090303/ReferralBot/assets/98480971/282a807a-2253-46d5-95d8-15704e4d467d">
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-# Test the Video
-+ Go to the AWS CloudFront service and copy the distribution domain from your created distribution.
-  
-<img width="209" alt="Screenshot 2024-01-08 175548" src="https://github.com/Kiran090303/ReferralBot/assets/98480971/c61060ce-68c2-432e-8bec-d3fbebcee93e">
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-+ Go to your S3 bucket, copy the video object name.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-<img width="118" alt="Screenshot 2024-01-08 175614" src="https://github.com/Kiran090303/ReferralBot/assets/98480971/15e8f1c4-3593-4032-ab11-33217bd23e29">
+### `npm run eject`
 
-+ Paste both the distribution domain and video object name into your browser bar to test the video.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-<img width="939" alt="test" src="https://github.com/Kiran090303/ReferralBot/assets/98480971/ba330fcb-07d3-4089-9475-b49099fc4d4e">
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-+ Good work 80% of the hard work is already done, Now let's implement the frontend framework. The frontend of choice is the react framework to achieve the result.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-# Frontend Implementation
-Clone This Repository.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
