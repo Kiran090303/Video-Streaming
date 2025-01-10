@@ -60,4 +60,4 @@
 
 https://github.com/Kiran090303/Video-Streaming/assets/98480971/51c42a37-44ed-45f2-a337-82f637009c8a
 
-# Congratulations! You have successfully set up a video streaming application on AWS using S3, CloudFront, and React. Feel free to customize and enhance the application based on your requirements #
+"Success! Video streaming app set up on AWS with S3, CloudFront, and React. Customize as needed."
